@@ -5,13 +5,16 @@
 }
 
 body{
-    background-color: rgb(14, 9, 1);
+    background-color: rgba(48,48,48,255);
     color: rgb(219, 171, 14);
 }
 
 #header{
     width: 100%;
     height: 100vh;
+    background-image: url(images/bg-img2.jpg);
+    background-size: cover;
+    background-position:center;
 }
 
 .container{
@@ -39,7 +42,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 4px;
-    background: #8002a7;
+    background: rgb(219, 9, 9);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -107,7 +110,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #8002a7;
+    background: rgb(219, 9, 9);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -137,6 +140,11 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
+.p-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -158,7 +166,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#8002a7);
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(219, 9, 9));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -179,7 +187,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #8002a7;
+    color: rgb(219, 9, 9);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -199,7 +207,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #8002a7;
+    border: 1px solid rgb(219, 9, 9);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -207,7 +215,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background-color: #8002a7;
+    background-color: rgb(219, 9, 9);
 }
 
 /* Contact */
@@ -238,12 +246,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #8002a7;
+    color: rgb(219, 9, 9);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background-color: #8002a7;
+    background-color: rgb(219, 9, 9);
 }
 .contact-right form{
     width: 100%;
