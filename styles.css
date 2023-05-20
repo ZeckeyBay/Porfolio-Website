@@ -9,6 +9,8 @@ body{
     color: rgb(219, 171, 14);
 }
 
+/* Home */
+
 #header{
     width: 100%;
     height: 100vh;
@@ -267,63 +269,3 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-
-/* Sidebar */
-
-#sidebar {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    background-color: rgb(61, 61, 61);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: solid 2px;
-    border-radius: 10px;
-    padding: 20px;
-    z-index: 9999;
-    display: none;
-    animation: slideInRight 0.3s ease-in-out;
-  }
-
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  #sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #sidebar li {
-    margin-bottom: 10px;
-  }
-
-  #sidebar ul li a {
-    text-decoration: none;
-    color: rgb(219, 171, 14);
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  #sidebar ul li a:hover {
-    color: rgb(219, 9, 9);
-  }
-  
-  #sidebar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .sidebar-show {
-    display: block !important;
-  }
-  
-  
