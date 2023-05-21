@@ -36,7 +36,6 @@
         </ul>
       </div>
       
-
 <!------------ About Me ------------>
     <div id="about">
         <div class="container">
@@ -123,11 +122,13 @@
                 <a href="images/Zeki Fatih TURAN CV-ENG.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form action="https://formsubmit.co/845d717602d295ca9f45544ea01530e9" method="POST">
+                    <input type="text" name="_honey" style="display: none;"> <!-- Honeypot -->
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <input type="hidden" name="_autoresponse" value="Thanks for the submission, I will get back to you asap. Kind regards, Zeki">
+                    <button type="submit" id="submit-btn" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>

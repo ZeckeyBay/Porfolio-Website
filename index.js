@@ -1,6 +1,7 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
+// About Me Buttons
 let opentab = (tabname) => {
   for (tablink of tablinks) {
     tablink.classList.remove("active-link");
@@ -23,7 +24,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
   
-
 window.addEventListener('scroll', function() {
     const aboutSection = document.getElementById('about');
     const sidebar = document.getElementById('sidebar');

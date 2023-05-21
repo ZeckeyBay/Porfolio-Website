@@ -269,6 +269,19 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+#submit-btn{
+    margin: 50px auto;
+    border: 1px solid rgb(219, 9, 9);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background 0.5s; 
+}
+#submit-btn:hover{
+    background: none;
+    cursor: pointer;
+}
 
 /* Sidebar */
 
@@ -303,11 +316,9 @@ form input, form textarea{
     padding: 0;
     margin: 0;
   }
-  
   #sidebar li {
     margin-bottom: 10px;
   }
-
   #sidebar ul li a {
     text-decoration: none;
     color: rgb(219, 171, 14);
@@ -316,16 +327,16 @@ form input, form textarea{
   }
   #sidebar ul li a:hover {
     color: rgb(219, 9, 9);
-  }
-  
+  }  
   #sidebar a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
-  
   .sidebar-show {
     display: block !important;
   }
+
+
   
   
