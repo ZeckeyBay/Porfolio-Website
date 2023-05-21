@@ -36,6 +36,17 @@ window.addEventListener('scroll', function() {
       sidebar.classList.remove('sidebar-show');
     }
   });
+
+  // Sidemenu
+
+  let sideMenu = document.getElementById("sidemenu")
+  
+  let openmenu = () =>{
+    sideMenu.style.right = "0"
+  }
+  let closemenu = () =>{
+    sideMenu.style.right = "-200px"
+  }
   
   
   

@@ -288,14 +288,15 @@ form input, form textarea{
 #sidebar {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 0px;
     transform: translateY(-50%);
     background-color: rgb(61, 61, 61);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: solid 2px;
-    border-radius: 10px;
-    padding: 20px;
-    z-index: 9999;
+    border-radius: 30px 0px 0px 30px;
+    padding-block: 70px;
+    padding: 40px 20px 25px 15px;
+    z-index: 4;
     display: none;
     animation: slideInRight 0.3s ease-in-out;
   }
@@ -337,6 +338,55 @@ form input, form textarea{
     display: block !important;
   }
 
+  /* Responsiveness */
+  nav .fas{
+    display: none;
+  }
+
+  @media only screen and (max-width:600px){
+    .header-text{
+        margin-top: 170px;
+        font-size: 25px;
+    }
+    .header-text h1{
+        font-size: 50px
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #554242;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 5;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+  }
 
   
   
