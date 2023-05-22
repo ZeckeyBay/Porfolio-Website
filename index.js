@@ -24,12 +24,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
   
+// Shows sidebar when we reach about level 
 window.addEventListener('scroll', function() {
     const aboutSection = document.getElementById('about');
     const sidebar = document.getElementById('sidebar');
     const aboutOffset = aboutSection.offsetTop;
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   
+  // Add a break when we click arrow to disable sidebar
     if (scrollPosition >= aboutOffset - 500) {
       sidebar.classList.add('sidebar-show');
     } else {
