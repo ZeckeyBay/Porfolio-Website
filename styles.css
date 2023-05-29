@@ -138,7 +138,7 @@ nav ul li a:hover::after{
 }
 
 /* Portfolio */
- 
+
 #portfolio{
     padding: 50px 0;
 }
@@ -295,98 +295,112 @@ form input, form textarea{
     border: solid 2px;
     border-radius: 30px 0px 0px 30px;
     padding-block: 70px;
-    padding: 40px 20px 25px 15px;
+    padding: 30px 10px 25px 45px;
     z-index: 4;
     display: none;
     animation: slideInRight 0.3s ease-in-out;
-  }
+    transition: right 0.5s;
+}
 
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  #sidebar ul {
+@keyframes slideInRight {
+0% {
+    transform: translateX(100%);
+    opacity: 0;
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+#sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  #sidebar li {
+}
+#sidebar li {
     margin-bottom: 10px;
-  }
-  #sidebar ul li a {
+}
+#sidebar ul li a {
     text-decoration: none;
     color: rgb(219, 171, 14);
     font-weight: bold;
     transition: color 0.3s;
-  }
-  #sidebar ul li a:hover {
+}
+#sidebar ul li a:hover {
     color: rgb(219, 9, 9);
-  }  
-  #sidebar a {
+}  
+#sidebar a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-  }
-  .sidebar-show {
+}
+.sidebar-show {
     display: block !important;
-  }
+    right: 0;
+}
+#sidebar i.fa-arrow-right-from-bracket {
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    color: rgb(219, 171, 14);
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar-hidden #sidebar{
+    right: 200px;
+}
 
-  /* Responsiveness */
-  nav .fas{
+/* Responsiveness */
+nav .fas{
     display: none;
-  }
+}
 
-  @media only screen and (max-width:600px){
+@media only screen and (max-width:600px){
     .header-text{
-        margin-top: 170px;
-        font-size: 25px;
+    margin-top: 170px;
+    font-size: 25px;
     }
     .header-text h1{
-        font-size: 50px
+    font-size: 50px
     }
     nav .fas{
-        display: block;
-        font-size: 25px;
+    display: block;
+    font-size: 25px;
     }
     nav ul{
-        background: #554242;
-        position: fixed;
-        top:0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 5;
-        transition: right 0.5s;
+    background: #554242;
+    position: fixed;
+    top:0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 5;
+    transition: right 0.5s;
     }
     nav ul li{
-        display: block;
-        margin: 25px;
+    display: block;
+    margin: 25px;
     }
     nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
     }
     .sub-title{
-        font-size: 40px;
+    font-size: 40px;
     }
     .about-col-1, .about-col-2{
-        flex-basis: 100%;
-        margin-bottom: 20px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
     }
     .contact-left, .contact-right{
-        flex-basis: 100%;
+    flex-basis: 100%;
     }
-  }
+}
 
-  
-  
+
+
