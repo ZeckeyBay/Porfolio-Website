@@ -25,6 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
   
 let isScroll = true;
+// Shows sidebar when we reach about level 
 window.addEventListener('scroll', function() {
     const aboutSection = document.getElementById('about');
     const sidebar = document.getElementById('sidebar');
