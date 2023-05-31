@@ -301,16 +301,43 @@ form input, form textarea{
     animation: slideInRight 0.3s ease-in-out;
     transition: right 0.5s;
 }
+#sidebar-replace{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: solid 2px;
+    border-radius: 40px 0px 0px 40px;
+    padding-block: 50px;
+    padding: 25px 10px 20px 20px;
+    z-index: 4;
+    display: none;
+    animation: slideInLeft 0.3s ease-in-out;
+    transition: right 0.5s;
+    cursor: pointer;
+}
 
 @keyframes slideInRight {
-0% {
+    0% {
     transform: translateX(100%);
     opacity: 0;
-}
-100% {
+    }
+    100% {
     transform: translateX(0);
     opacity: 1;
+    }
 }
+@keyframes slideInLeft {
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
 }
 
 #sidebar ul {

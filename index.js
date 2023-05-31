@@ -47,22 +47,28 @@ window.addEventListener('scroll', function() {
     sideMenu.style.right = "-200px"
   }
   
-  const sidebarButton = document.getElementById("sidebar-btns");
-  const sidebar = document.querySelector("#sidebar");
+const sidebarButton = document.getElementById("sidebar-btns");
+const sidebar = document.querySelector("#sidebar");
 
 sidebarButton.addEventListener("click", function () {
   sidebar.classList.toggle("sidebar-show");
   isScroll = false;
   loadSidebar();
 });
-// replace sidebar with a icon when clicked(does not work now)
-let loadSidebar = () =>{
+// replace sidebar with a icon when clicked
+let loadSidebar = () => {
   if (sidebar.classList.contains("sidebar-show")) {
-    sidebarButton.classList.replace("fa-solid fa-arrow-right-from-bracket","fa-solid fa-arrow-left");
+    sidebar.classList.remove("sidebar-show");
+    document.getElementById("sidebar-replace").style.display = "block";
   } else {
-    sidebarButton.classList.replace("fa-solid fa-arrow-left","fa-solid fa-arrow-right-from-bracket");
+    sidebar.classList.add("sidebar-show");
+    document.getElementById("sidebar-replace").style.display = "none";
+    isScroll = true;
   }
-}
+};
+
+
+
 
 
   
