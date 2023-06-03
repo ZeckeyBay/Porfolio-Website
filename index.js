@@ -38,7 +38,7 @@ window.addEventListener('scroll', function() {
     }
   });
 
-  // Sidemenu
+  // Sidemenu for responsiveness
   let sideMenu = document.getElementById("sidemenu")
   let openmenu = () =>{
     sideMenu.style.right = "0"
@@ -55,7 +55,7 @@ sidebarButton.addEventListener("click", function () {
   isScroll = false;
   loadSidebar();
 });
-// replace sidebar with a icon when clicked
+// replace sidebar with an icon when clicked
 let loadSidebar = () => {
   if (sidebar.classList.contains("sidebar-show")) {
     sidebar.classList.remove("sidebar-show");
